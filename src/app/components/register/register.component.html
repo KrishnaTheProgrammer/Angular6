@@ -1,0 +1,15 @@
+<div class="col-sm-4" style="background-color: aliceblue; margin-left: 35%;">
+        
+            <br><input type="text" class="form-control" placeholder="Enter your Username..." id="input-success2" [(ngModel)]="username" value={{username}} (keydown)="keyDownFunction($event)" /><br>
+            <input type="text" class="form-control" placeholder="Enter your password..." id="input-success2" [(ngModel)]="password" value={{password}} (keydown)="keyDownFunction($event)"/><br>
+
+            <div class="input">
+                <!-- <input type="submit" (click)="addUser()" class="btn btn-primary" value="Register"/> -->
+                <button routerLink="/login" class="btn btn-success center-block btn-lg" type="submit">Go to Login..</button><br>
+                <button (click)="addUser()" class="btn btn-success center-block btn-lg" >Register</button><br>
+            </div>
+        </div>
+
+        
+
+        

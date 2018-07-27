@@ -1,0 +1,10 @@
+<div class="col-sm-4" style="background-color: aliceblue; margin-left: 35%;">
+        <input type="text" class="form-control" placeholder="Enter your Username..." id="input-success2" [(ngModel)]="username" value={{username}} (keydown)="keyDownFunction($event)" /><br>
+        <input type="text" class="form-control" placeholder="Enter your password..." id="input-success2" [(ngModel)]="password" value={{password}} (keydown)="keyDownFunction($event)"/><br>
+
+        <div class="input">
+            <button (click)="login()" class="btn btn-success center-block btn-lg" type="button">Login</button><br>
+            <button routerLink="/register" class="btn btn-success center-block btn-lg" >Register</button><br>
+            <button routerLink="/forget-password" class="btn btn-success center-block btn-lg" >Forget password</button><br>
+        </div>
+    </div>
